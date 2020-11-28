@@ -25,13 +25,15 @@ const Search = () => {
     <div className='search'>
       <DateRangePicker ranges={[selectionRange]} onChange={handleSelect} />
 
-      <h2>
-        Number of guests <PeopleIcon />
-      </h2>
+      <div className='search__middle'>
+        <h2>Number of guests:</h2>
 
-      <input min={0} defaultValue={2} type='number' />
+        <input min={0} defaultValue={2} type='number' />
 
-      <Button> Airbnb</Button>
+        <PeopleIcon className='icon' />
+      </div>
+
+      <Button className='btn'> Search Airbnb</Button>
     </div>
   );
 };
