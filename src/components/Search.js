@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Search.css';
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
-import { DateRangePicker } from 'react-date-range';
+import { DateRange } from 'react-date-range';
 import PeopleIcon from '@material-ui/icons/People';
 import { Button } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
@@ -25,10 +25,10 @@ const Search = () => {
 
   return (
     <div className='search'>
-      <DateRangePicker ranges={[selectionRange]} onChange={handleSelect} />
+      <DateRange ranges={[selectionRange]} onChange={handleSelect} />
 
       <div className='search__middle'>
-        <h2>Number of guests:</h2>
+        <h4>Number of guests:</h4>
 
         <input min={0} defaultValue={2} type='number' />
 

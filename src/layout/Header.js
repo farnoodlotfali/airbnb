@@ -19,7 +19,7 @@ const Header = () => {
       </div>
 
       <div className='header__right'>
-        <p>Become a host</p>
+        <p className='header_text'>Become a host</p>
         <LanguageIcon />
         <ExpandedMoreIcon />
         <Avatar />
