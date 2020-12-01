@@ -27,6 +27,7 @@ const Home = () => {
             description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores repudiandae illo voluptates! Asperiores, assumenda quae?'
             title='mountain'
             price='£223/night'
+            style={{ width: '464px' }}
           />
         </div>
         <div className='home__section'>
